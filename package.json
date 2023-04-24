@@ -1,0 +1,28 @@
+{
+  "name": "nextjs-blog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.1.0",
+    "@types/phone": "^2.4.1",
+    "autoprefixer": "10.4.14",
+    "next": "13.3.0",
+    "postcss": "8.4.22",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.43.9",
+    "tailwindcss": "3.3.1",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.12",
+    "@types/react": "^18.0.37",
+    "typescript": "^5.0.4"
+  }
+}

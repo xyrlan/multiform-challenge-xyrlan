@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { images } from "../../next.config"
-import Sidebar from "./Sidebar"
+import Sidebar from "./Sidebar.tsx"
 
 export default function Layout ({children}) {
     return(
