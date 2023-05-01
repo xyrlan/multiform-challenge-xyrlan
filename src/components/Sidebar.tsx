@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 
 
-export default function Sidebar({currentSteps}) {
+export default function Sidebar({currentSteps, goForwards}) {
 
   
 
@@ -24,7 +24,10 @@ export default function Sidebar({currentSteps}) {
         }
       })
 
-console.log(currentSteps);
+
+
+      
+// console.log(currentSteps);
 
     
 
@@ -60,7 +63,6 @@ console.log(currentSteps);
                     
                     >
                     <button
-                    
                     className={`${selectedButton === 'button2' ? 'rounded-full max-lg:scale-75 max-md:w-10 max-md:h-10 md:w-12 md:h-12 max-md:mx-2 md:mx-4 text-lg text-black duration-500 ease-in scale-90 bg-[#bfe2fd]' : 'rounded-full max-lg:scale-75 max-md:w-10 max-md:h-10 md:w-12 md:h-12 max-md:mx-2 md:mx-4 text-lg bg-transparent text-white border-white border-solid border-2 scale-90'}`}>2</button>
                     <p 
                     

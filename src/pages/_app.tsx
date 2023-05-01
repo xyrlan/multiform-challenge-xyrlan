@@ -139,13 +139,13 @@ export default function App({ Component, pageProps }) {
 
   return( 
   <>
-    <main className=" font-ubuntu flex md:h-screen max-md:h-screen justify-center md:items-center lg:p-16 bg-[#bfe2fd] relative">
+    <main className=" font-ubuntu flex md:h-screen max-md:h-screen justify-center items-center md:items-center lg:p-16 bg-[#bfe2fd] relative">
           <div className='md:hidden max-md:w-screen '>
-            <Sidebar currentSteps={currentStep} />
+            <Sidebar currentSteps={currentStep} goForwards={goForwards} />
           </div>
-        <div className='bg-white w-[70%] h-[95%] max-lg:h-[75%] max-md:h-fit rounded-3xl p-3 flex shadow-lg max-md:flex-col max-md:w-[95%] max-md:top-20 max-md:z-10 max-md:absolute'>
+        <div className='bg-white w-[70%] h-[95%] max-h-[715px] max-w-[1024px] max-lg:h-[75%] max-md:h-fit rounded-3xl p-3 flex shadow-lg max-md:flex-col max-md:w-[95%] max-md:top-20 max-md:z-10 max-md:absolute'>
           <div className=' lg:h-full lg:rounded-xl max-md:hidden'>
-          <Sidebar currentSteps={currentStep} />
+          <Sidebar currentSteps={currentStep} goForwards={goForwards}/>
           </div>
           <div className='bg-white w-[70%] max-md:w-full'>
           {MultiFormComponents[currentStep]}
