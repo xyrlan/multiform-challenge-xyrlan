@@ -12,6 +12,7 @@
     "@hookform/resolvers": "^3.1.0",
     "@types/phone": "^2.4.1",
     "autoprefixer": "10.4.14",
+    "confetti-js": "^0.0.18",
     "next": "13.3.0",
     "postcss": "8.4.22",
     "react": "18.2.0",

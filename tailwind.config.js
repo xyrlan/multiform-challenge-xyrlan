@@ -9,7 +9,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      ubuntu: 'Ubuntu',
+      ubuntu: ["Ubuntu", "sans-serif"]
+
     },
   
     extend: {

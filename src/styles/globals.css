@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* @font-face {
+  font-family: 'Ubuntu';
+  src: url('/fonts/Ubuntu-Bold.ttf') format('ttf'),
+       url('/fonts/Ubuntu-Regular.ttf') format('ttf'),
+       url('/fonts/Ubuntu-Medium.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+} */
+
 
 
 :root {

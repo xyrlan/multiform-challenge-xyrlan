@@ -1,72 +1,108 @@
-import Link from "next/link";
-import { useState } from "react";
-import Image from "next/image";
 
-export default function Sidebar() {
+import { useState, useEffect } from "react";
+
+
+
+export default function Sidebar({currentSteps}) {
+
+  
 
     const [selectedButton, setSelectedButton] = useState('button1');
-   
+
+
+    useEffect(() => {
+        if (currentSteps === 0) {
+          setSelectedButton("button1");
+        } else if (currentSteps === 1) {
+          setSelectedButton("button2");
+        } else if (currentSteps === 2) {
+          setSelectedButton("button3");
+        } else if (currentSteps === 2) {
+            setSelectedButton("button3");
+        } else if (currentSteps === 3) {
+          setSelectedButton("button4");
+        }
+      })
+
+console.log(currentSteps);
+
+    
 
     return(
         <div 
-        className="bg-[url('/images/bg-sidebar-desktop.svg')] rounded-xl w-[29%] h-full"
+        className="bg-[url('/images/bg-sidebar-desktop.svg')] md:rounded-xl md:w-52 lg:w-52 xl:w-64 h-full max-md:w-full max-md:top-0 max-md:bg-[url('/images/bg-sidebar-mobile.svg')] max-md:absolute max-md:h-[25%]  max-md:flex max-md:justify-center"
         >
         
-                <ul className="flex flex-col gap-6 pt-10 ml-5">
-                    <Link href="/" > 
-                    <li className="inline-flex gap-2">
+                <ul className="font-ubuntu flex md:flex-col md:gap-6 md:pt-10 xl:ml-5 lg:ml-3 max-md:mt-6 max-md:justify-center">
+                   
+                    <li 
+                    className="inline-flex xl:gap-2 max-lg:gap-0 md:items-center"
+                    >
                     
                     <button
-                    onClick={() => setSelectedButton('button1')} 
-                    className={`${selectedButton === 'button1' ? 'rounded-full w-12 mx-4 text-lg text-black duration-500 scale-90 bg-[#bfe2fd]' : 'rounded-full w-12 mx-4 text-lg bg-transparent text-white border-white border-solid border-2 scale-90'}`}>1</button>
+                    
+                    className={`${selectedButton === 'button1' ? ' ease-in rounded-full max-lg:scale-75 max-md:w-10 max-md:h-10 md:w-12 md:h-12 max-md:mx-2 md:mx-4 text-lg text-black duration-500 scale-90 bg-[#bfe2fd]' : ' rounded-full max-lg:scale-75 max-md:w-10 max-md:h-10 md:w-12 md:h-12 max-md:mx-2 md:mx-4 text-lg bg-transparent text-white border-white border-solid border-2 scale-90'}`}>1</button>
                     
                     <p 
-                    onClick={() => setSelectedButton('button1')}
-                    className="flex flex-col">
-                        <span>Step 1</span>
-                        <span>Your info</span>
+                    className="flex flex-col max-md:hidden">
+                        <span className="text-gray-300 text-sm">STEP 1</span>
+                        <span className="font-semibold tracking-wider text-sm">YOUR INFO</span>
                     </p>
                     </li>
-                    </Link>
-                    <Link href="/selectplan" > 
-                    <li className="inline-flex gap-2">
+                    
+                    
+                
+                  
+                    <li 
+                    className="inline-flex xl:gap-2 max-lg:gap-0 md:items-center"
+                    
+                    
+                    
+                    >
                     <button
-                    onClick={() => setSelectedButton('button2')}
-                    className={`${selectedButton === 'button2' ? 'rounded-full w-12 mx-4 text-lg text-black duration-500 scale-90 bg-[#bfe2fd]' : 'rounded-full w-12 mx-4 text-lg bg-transparent text-white border-white border-solid border-2 scale-90'}`}>2</button>
+                    
+                    className={`${selectedButton === 'button2' ? 'rounded-full max-lg:scale-75 max-md:w-10 max-md:h-10 md:w-12 md:h-12 max-md:mx-2 md:mx-4 text-lg text-black duration-500 ease-in scale-90 bg-[#bfe2fd]' : 'rounded-full max-lg:scale-75 max-md:w-10 max-md:h-10 md:w-12 md:h-12 max-md:mx-2 md:mx-4 text-lg bg-transparent text-white border-white border-solid border-2 scale-90'}`}>2</button>
                     <p 
-                    onClick={() => setSelectedButton('button2')}
-                    className="flex flex-col">
-                        <span>Step 2</span>
-                        <span>Select plan</span>
+                    
+                    className="flex flex-col max-md:hidden">
+                        <span className="text-gray-300 text-sm">STEP 2</span>
+                        <span className="font-semibold tracking-wider text-sm">SELECT PLAN</span>
                     </p>
                     </li>
-                    </Link>
-                    <Link href="/addson" > 
-                    <li className="inline-flex gap-2">
+                    
+
+                    
+                    <li 
+                    className="inline-flex xl:gap-2 max-lg:gap-0 md:items-center"
+                    
+                    >
                         <button
-                        onClick={() => setSelectedButton('button3')}
-                        className={`${selectedButton === 'button3' ? 'rounded-full w-12 mx-4 text-lg text-black duration-500 scale-90 bg-[#bfe2fd]' : 'rounded-full w-12 mx-4 text-lg bg-transparent text-white border-white border-solid border-2 scale-90'}`}>3</button>
+                        
+                        className={`${selectedButton === 'button3' ? 'ease-in rounded-full max-lg:scale-75 max-md:w-10 max-md:h-10 md:w-12 md:h-12 max-md:mx-2 md:mx-4 text-lg text-black duration-500 scale-90 bg-[#bfe2fd]' : 'rounded-full max-lg:scale-75 max-md:w-10 max-md:h-10 md:w-12 md:h-12 max-md:mx-2 md:mx-4 text-lg bg-transparent text-white border-white border-solid border-2 scale-90'}`}>3</button>
                     <p 
-                    onClick={() => setSelectedButton('button3')}
-                    className="flex flex-col">
-                        <span>Step 3</span>
-                        <span>Add-ons</span>
+                    
+                    className="flex flex-col max-md:hidden">
+                        <span className="text-gray-300 text-sm">STEP 3</span>
+                        <span className="font-semibold tracking-wider text-sm">ADD-ONS</span>
                     </p>
                     </li>
-                    </Link>
-                    <Link href="/summary" > 
-                    <li className="inline-flex gap-2">
+                    
+                   
+                    <li 
+                    className="inline-flex xl:gap-2 max-lg:gap-0 md:items-center"
+                    
+                    >
                     <button
-                    onClick={() => setSelectedButton('button4')} 
-                    className={`${selectedButton === 'button4' ? 'rounded-full w-12 mx-4 text-lg text-black duration-500 scale-90 bg-[#bfe2fd]' : 'rounded-full w-12 mx-4 text-lg bg-transparent text-white border-white border-solid border-2 scale-90'}`}>4</button>
+                     
+                    className={`${selectedButton === 'button4' ? 'ease-in rounded-full max-lg:scale-75 max-md:w-10 max-md:h-10 md:w-12 md:h-12 max-md:mx-2 md:mx-4 text-lg text-black duration-500 scale-90 bg-[#bfe2fd]' : 'rounded-full max-lg:scale-75 max-md:w-10 max-md:h-10 md:w-12 md:h-12 max-md:mx-2 md:mx-4 text-lg bg-transparent text-white border-white border-solid border-2 scale-90'}`}>4</button>
                     <p 
-                    onClick={() => setSelectedButton('button4')}
-                    className="flex flex-col">
-                        <span>Step 4</span>
-                        <span>Summary</span>
+                    
+                    className="flex flex-col max-md:hidden">
+                        <span className="text-gray-300 text-sm">STEP 4</span>
+                        <span className="font-semibold tracking-wider text-sm">SUMMARY</span>
                     </p>
                     </li>
-                    </Link>
+                    
                 </ul>
 
             </div>
