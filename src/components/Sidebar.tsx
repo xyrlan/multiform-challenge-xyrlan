@@ -33,7 +33,7 @@ export default function Sidebar({currentSteps, goForwards}) {
 
     return(
         <div 
-        className=" bg-sidebar-desktop md:rounded-xl md:w-52 lg:w-52 xl:w-64 h-full max-md:w-full max-md:top-0 max-md:bg-[url('./images/bg-sidebar-mobile.svg')] max-md:absolute max-md:h-[25%]  max-md:flex max-md:justify-center"
+        className=" bg-[url('./images/bg-sidebar-desktop.svg')] md:rounded-xl md:w-52 lg:w-52 xl:w-64 h-full max-md:w-full max-md:top-0 max-md:bg-[url('./images/bg-sidebar-mobile.svg')] max-md:absolute max-md:h-[25%]  max-md:flex max-md:justify-center"
         >
         
                 <ul className="font-ubuntu flex md:flex-col md:gap-6 md:pt-10 xl:ml-5 lg:ml-3 max-md:mt-6 max-md:justify-center">
