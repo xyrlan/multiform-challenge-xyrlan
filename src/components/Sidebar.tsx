@@ -27,14 +27,16 @@ export default function Sidebar({currentSteps, goForwards}) {
 
       
 // console.log(currentSteps);
-
+//max-md:bg-["url('/images/bg-sidebar-mobile.svg')"]
+//md:bg-[url('/images/bg-sidebar-desktop.svg')]
     
 
     return(
-        <div 
-        className="md:bg-[url('/images/bg-sidebar-desktop.svg')] max-md:bg-[url('/images/bg-sidebar-mobile.svg')] md:rounded-xl md:w-52 lg:w-52 xl:w-64 h-full max-md:w-full max-md:top-0 sm:mobile max-md:absolute max-md:h-[25%]  max-md:flex max-md:justify-center"
-        >
+        <>
         
+        <div 
+        className="md:bg-desktop max-md:bg-mobile bg-cover md:rounded-xl md:w-52 lg:w-52 xl:w-64 h-full max-md:w-full max-md:top-0 sm:mobile max-md:absolute max-md:h-[25%]  max-md:flex max-md:justify-center relative"
+        >
                 <ul className="font-ubuntu flex md:flex-col md:gap-6 md:pt-10 xl:ml-5 lg:ml-3 max-md:mt-6 max-md:justify-center">
                    
                     <li 
@@ -107,6 +109,6 @@ export default function Sidebar({currentSteps, goForwards}) {
                 </ul>
 
             </div>
-            
+            </>
     )
 }
