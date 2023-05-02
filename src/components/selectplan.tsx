@@ -62,7 +62,7 @@ export default function Selectplan({ isMonthly, handleToggle, data, updateFieldH
                 id="arcade"
                 
                 >
-                    <Image className="xl:mb-12 lg:mb-10 md:mb-8 max-md:mr-3" src="./images/icon-arcade.svg" width="40" height="40" alt="arcade icon" />
+                    <Image className="xl:mb-12 lg:mb-10 md:mb-8 max-md:mr-3" src="/images/icon-arcade.svg" width="40" height="40" alt="arcade icon" />
                     {currentData.map((plan) => (
                     <div className="" key={plan.title}>
                         <h2 className="font-bold">{plan.title}</h2>
@@ -79,7 +79,7 @@ export default function Selectplan({ isMonthly, handleToggle, data, updateFieldH
 
                 
                 >
-                <Image className="xl:mb-12 lg:mb-10 md:mb-8" src="./images/icon-advanced.svg" width="40" height="40" alt="arcade icon" />
+                <Image className="xl:mb-12 lg:mb-10 md:mb-8" src="/images/icon-advanced.svg" width="40" height="40" alt="arcade icon" />
                 {currentData.map((plan) => (
                     <div className="" key={plan.title1}>
                         <h2 className="font-bold">{plan.title1}</h2>
@@ -93,7 +93,7 @@ export default function Selectplan({ isMonthly, handleToggle, data, updateFieldH
                 onClick={() => handleSelectPlanClick('plan3')}
                 id="pro"
                 >
-                <Image className="xl:mb-12 lg:mb-10 md:mb-8 max-md:-mr-2" src="./images/icon-pro.svg" width="40" height="40" alt="arcade icon" />
+                <Image className="xl:mb-12 lg:mb-10 md:mb-8 max-md:-mr-2" src="/images/icon-pro.svg" width="40" height="40" alt="arcade icon" />
                 {currentData.map((plan) => (
                     <div className="" key={plan.title2}>
                         <h2 className="font-bold">{plan.title2}</h2>

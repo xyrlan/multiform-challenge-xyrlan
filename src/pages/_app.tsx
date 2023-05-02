@@ -1,5 +1,7 @@
 import '../styles/globals.css'
 import Image from 'next/image'
+import useSWR from 'swr'
+
 
 import { useState } from 'react'
 import { useMultiForm } from '../hooks/useMultiForm'
@@ -9,7 +11,7 @@ import { Yourinfo } from '../components/yourinfo'
 
 
 
-import Sidebar from '../components/Sidebar'
+import Sidebar from '../components/sidebar'
 import Addsonyr from '../components/addsonyr'
 import Addsonmo from '../components/addsonmo'
 import Summary from '../components/summary'
