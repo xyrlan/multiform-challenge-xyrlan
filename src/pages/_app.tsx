@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+
 import Image from 'next/image'
 import useSWR from 'swr'
 
@@ -161,6 +162,8 @@ export default function App({ Component, pageProps }) {
           <p className='text-xs absolute bottom-0 left-[40%]'>Challenge by:<a className='text-black' href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a> <a href="https://github.com/xyrlan" target="_blank">Coded by: <span className='text-black' >Xyrlan</span></a></p>
     </footer>            
     </main>
+    <Component {...pageProps} />
   </>
+  
   );
 }

@@ -1,7 +1,10 @@
 import App from "./_app"
+import { AppProps } from 'next/app'
 
-export default function Home({children}) {
+export default function Home({ Component, pageProps }: AppProps) {
     return(
-        <App>{children}</App>
+        <>
+        <Component {...pageProps} />
+        </>
     )
 }
