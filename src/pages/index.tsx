@@ -1,10 +1,12 @@
+import { Children } from "react"
 import App from "./_app"
 import { AppProps } from 'next/app'
 
-export default function Home({ Component, pageProps }: AppProps) {
+export default function Home({children}) {
     return(
-        <>
-        <Component {...pageProps} />
-        </>
+        <div>
+            {children}
+        </div>
+
     )
 }
