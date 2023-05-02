@@ -35,3 +35,23 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.desktop {
+  background-image: url('/images/bg-sidebar-desktop.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mobile {
+  background-image: url('/images/bg-sidebar-mobile.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .desktop {
+    background-image: url('/images/bg-sidebar-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  }
