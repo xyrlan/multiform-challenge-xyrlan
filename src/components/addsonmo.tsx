@@ -45,7 +45,7 @@ if(selectedAdds.includes('add3') && !isMonthly){
                     className={`duration-300 select-none max-md:mr-2 md:mr-3 lg:mr-6 h-5 w-5 flex justify-center items-center ${selectedAdds.includes('add1') ? 'bg-[#473dff] rounded ' : 'rounded border border-solid'}`}
                     onClick={() => handleToggleAddson('add1')} 
                     >
-                    <Image src="/images/icon-checkmark.svg" width={12} height={9} alt="icon" 
+                    <Image src="images/icon-checkmark.svg" width={12} height={9} alt="icon" 
                     onClick={() => handleToggleAddson('add1')} />
                     </div>
                     <h1  
@@ -74,7 +74,7 @@ if(selectedAdds.includes('add3') && !isMonthly){
                     >
                     <Image 
                     onClick={() => handleToggleAddson('add2')}
-                    src="/images/icon-checkmark.svg" width={12} height={9} alt="icon" />
+                    src="images/icon-checkmark.svg" width={12} height={9} alt="icon" />
                     </div>
                     <h1 className="font-bold ">Larger storage<span className="block font-medium text-gray-400 text-sm">Extra 1TB of cloud save</span></h1>
                     {currentData.map((data) => (
@@ -98,7 +98,7 @@ if(selectedAdds.includes('add3') && !isMonthly){
                     >
                     <Image 
                     onClick={() => handleToggleAddson('add3')}
-                    src="/images/icon-checkmark.svg" width={12} height={9} alt="icon" />
+                    src="images/icon-checkmark.svg" width={12} height={9} alt="icon" />
                     </div>
                     <h1 className="font-bold ">Customizable profile<span className="block font-medium text-gray-400 text-sm">Custom theme on your profile</span></h1>
                     {currentData.map((data) => (

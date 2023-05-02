@@ -49,7 +49,7 @@ export default function Addsonyr({ currentData, data, handleToggleAddson, select
                     >
                     <Image 
                     onClick={() => handleToggleAddson('add1')}
-                    src="/images/icon-checkmark.svg" width={12} height={9} alt="icon" />
+                    src="images/icon-checkmark.svg" width={12} height={9} alt="icon" />
                     </div>
                     <h1  
                     className="font-bold ">Online service
@@ -78,7 +78,7 @@ export default function Addsonyr({ currentData, data, handleToggleAddson, select
                     >
                     <Image 
                     onClick={() => handleToggleAddson('add2')}
-                    src="/images/icon-checkmark.svg" width={12} height={9} alt="icon" />
+                    src="images/icon-checkmark.svg" width={12} height={9} alt="icon" />
                     </div>
                     <h1 className="font-bold ">Larger storage<span className="block font-medium text-gray-400 text-sm">Extra 1TB of cloud save</span></h1>
                     {currentData.map((data) => (
@@ -103,7 +103,7 @@ export default function Addsonyr({ currentData, data, handleToggleAddson, select
                     >
                     <Image 
                     onClick={() => handleToggleAddson('add3')}
-                    src="/images/icon-checkmark.svg" width={12} height={9} alt="icon" />
+                    src="images/icon-checkmark.svg" width={12} height={9} alt="icon" />
                     </div>
                     <h1 className="font-bold ">Customizable profile<span className="block font-medium text-gray-400 text-sm">Custom theme on your profile</span></h1>
                     

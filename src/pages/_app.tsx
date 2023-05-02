@@ -11,7 +11,7 @@ import { Yourinfo } from '../components/yourinfo'
 
 
 
-import Sidebar from '../components/sidebar'
+import Sidebar from '../components/Sidebar'
 import Addsonyr from '../components/addsonyr'
 import Addsonmo from '../components/addsonmo'
 import Summary from '../components/summary'
