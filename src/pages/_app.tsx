@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import Image from 'next/image'
 
 import { useState } from 'react'
 import { useMultiForm } from '../hooks/useMultiForm'
