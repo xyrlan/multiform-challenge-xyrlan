@@ -39,13 +39,13 @@ body {
 }
 
 .bg-sidebar-desktop {
-  background-image: url('/images/bg-sidebar-desktop.svg');
+  background-image: url('./images/bg-sidebar-desktop.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .bg-sidebar-mobile {
-  background-image: url('/images/bg-sidebar-mobile.svg');
+  background-image: url('./images/bg-sidebar-mobile.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
