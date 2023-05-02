@@ -36,22 +36,22 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.desktop {
+/* .desktop {
   background-image: url('/images/bg-sidebar-desktop.svg');
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
-.mobile {
-  background-image: url('/images/bg-sidebar-mobile.svg');
+/* .mobile {
+  background-image: url('/public/images/bg-sidebar-mobile.svg');
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .desktop {
-    background-image: url('/images/bg-sidebar-desktop.svg');
+    background-image: url('/public/images/bg-sidebar-desktop.svg');
     background-size: cover;
     background-repeat: no-repeat;
   }
-  }
+  } */
